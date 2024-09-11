@@ -1,0 +1,214 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.circle-gradient {
+  position: absolute;
+  filter: blur(150px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.circle-1 {
+  top: -10%;
+  left: -10%;
+  width: 40vw;
+  height: 40vh;
+  background: radial-gradient(
+    circle,
+    rgba(6, 149, 162, 0.5) 0%,
+    rgba(62, 178, 255, 0.5) 100%
+  );
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ff52c6, #7a65fd, #7cc0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.circle-2 {
+  top: 50%;
+  right: -20%;
+  width: 40vw;
+  height: 40vh;
+  background: radial-gradient(
+    circle,
+    rgba(255, 82, 198, 0.5) 0%,
+    rgba(254, 220, 178, 0.5) 100%
+  );
+}
+
+.circle-3 {
+  bottom: -20%;
+  left: 30%;
+  width: 40vw;
+  height: 40vh;
+  background: radial-gradient(
+    circle,
+    rgba(254, 220, 178, 0.5) 0%,
+    rgba(122, 101, 253, 0.5) 100%
+  );
+}
+
+.bg-img {
+  background-image: url("/src/assets/bg-img.svg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-partner {
+  background-image: url("/src/assets/bg-partner.svg");
+  background-size: 40%;
+  background-position: center bottom 20%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.frosted-glass {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.32);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.frosted-glass-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+}
+
+/* Dropdown Effects */
+
+.glassmorphism {
+  backdrop-filter: blur(10px);
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-content {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.dropdown-hover:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* .grid-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+  } */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 300px;
+  flex-grow: 1;
+}
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 90, 213, 0.85) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 90, 213, 0.85);
+  border-radius: 5px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(128, 90, 213, 1);
+}
+
+.gradient-shadow {
+  position: relative;
+}
+
+.gradient-shadow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  box-shadow: 2px 8px 15px rgba(104, 112, 118, 0.8);
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #ff52c6 0%,
+    #7a65fd 51%,
+    #7cc0ff 100%
+  );
+  background-size: 200% auto;
+  color: white;
+  transition: background-position 0.5s ease-in-out !important;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: none;
+  border: #7a65fd 2px solid;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(17, 17, 17);
+  color: white;
+}
