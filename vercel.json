@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "http://dev.portal.solanavibestation.com:5000/:path*"
+    }
+  ]
+}
